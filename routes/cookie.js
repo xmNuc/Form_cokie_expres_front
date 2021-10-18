@@ -14,7 +14,7 @@ cookieRouter
   })
   .get('/show', (req, res) => {
     const { name } = req.cookies;
-    res.send(name);
+    res.send(name ?? 'Nothing was saved yet');
   })
   .get('/check', (req, res) => {
     const { name } = req.cookies;
