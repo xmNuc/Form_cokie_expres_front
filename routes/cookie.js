@@ -10,7 +10,7 @@ cookieRouter
       .cookie('name', name, {
         maxAge: 1000 * 60 * 60 * 24 * 30,
       })
-      .send(`Name was saved`);
+      .send(`Information was saved`);
   })
   .get('/show', (req, res) => {
     const { name } = req.cookies;
